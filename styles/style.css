@@ -244,6 +244,106 @@ header .main-navigation ul li a:hover {
   height: 151px;
 }
 
+/* line 1, ../sass/site-parts/_content.scss */
+#content {
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+/* line 4, ../sass/site-parts/_content.scss */
+#content h2 {
+  margin: 80px auto 20px;
+  color: #424147;
+  font-size: 35px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 12, ../sass/site-parts/_content.scss */
+#content .descript-content {
+  margin-bottom: 50px;
+  color: #424147;
+  font-size: 24px;
+  line-height: 21px;
+  text-align: center;
+}
+/* line 19, ../sass/site-parts/_content.scss */
+#content .skills-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+/* line 24, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item {
+  overflow: hidden;
+  position: relative;
+  max-width: 250px;
+  background-color: #ffea00;
+}
+/* line 29, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .main-img-skill {
+  display: block;
+  margin: 30px auto 20px;
+}
+/* line 33, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item h3 {
+  margin-bottom: 10px;
+  color: black;
+  font-family: 'Source Code Pro';
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .descript-item {
+  padding: 20px 15px;
+  background-color: #414146;
+  color: white;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+}
+/* line 50, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* line 57, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover:hover {
+  opacity: 1;
+}
+/* line 60, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover h4 {
+  margin: 8px auto 0;
+  padding: 0 15px;
+  background-color: #414146;
+  color: white;
+  font-family: 'Source Code Pro';
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* line 69, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover h4 span {
+  display: block;
+}
+/* line 73, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover p {
+  padding: 0 15px;
+  text-align: right;
+  font-size: 10px;
+  color: #fff;
+}
+/* line 78, ../sass/site-parts/_content.scss */
+#content .skills-list .skills-item .rollover p span {
+  color: #ffea00;
+}
+
 /* line 1, ../sass/layout/_footer.scss */
 footer {
   position: relative;
@@ -301,7 +401,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -316,7 +416,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 img {
   max-width: 100%;
 }
