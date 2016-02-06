@@ -278,14 +278,15 @@ header .main-navigation ul li a:hover {
   overflow: hidden;
   position: relative;
   max-width: 250px;
+  max-height: 256px;
   background-color: #ffea00;
 }
-/* line 29, ../sass/site-parts/_content.scss */
+/* line 30, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .main-img-skill {
   display: block;
   margin: 30px auto 20px;
 }
-/* line 33, ../sass/site-parts/_content.scss */
+/* line 34, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item h3 {
   margin-bottom: 10px;
   color: black;
@@ -295,8 +296,9 @@ header .main-navigation ul li a:hover {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 42, ../sass/site-parts/_content.scss */
+/* line 43, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .descript-item {
+  margin-bottom: 15px;
   padding: 20px 15px;
   background-color: #414146;
   color: white;
@@ -304,7 +306,7 @@ header .main-navigation ul li a:hover {
   line-height: 17px;
   text-align: center;
 }
-/* line 50, ../sass/site-parts/_content.scss */
+/* line 52, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover {
   position: absolute;
   top: 0;
@@ -313,11 +315,11 @@ header .main-navigation ul li a:hover {
   height: 100%;
   opacity: 0;
 }
-/* line 57, ../sass/site-parts/_content.scss */
+/* line 59, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover:hover {
   opacity: 1;
 }
-/* line 60, ../sass/site-parts/_content.scss */
+/* line 62, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover h4 {
   margin: 8px auto 0;
   padding: 0 15px;
@@ -328,20 +330,136 @@ header .main-navigation ul li a:hover {
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 69, ../sass/site-parts/_content.scss */
+/* line 71, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover h4 span {
   display: block;
 }
-/* line 73, ../sass/site-parts/_content.scss */
+/* line 75, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover p {
   padding: 0 15px;
   text-align: right;
   font-size: 10px;
   color: #fff;
 }
-/* line 78, ../sass/site-parts/_content.scss */
+/* line 80, ../sass/site-parts/_content.scss */
 #content .skills-list .skills-item .rollover p span {
   color: #ffea00;
+}
+
+/* line 1, ../sass/site-parts/_portfolio.scss */
+#portfolio {
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+/* line 4, ../sass/site-parts/_portfolio.scss */
+#portfolio h2 {
+  position: relative;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_portfolio.scss */
+#portfolio h2 span {
+  padding: 5px 25px;
+  background-color: #424147;
+  color: #ffea00;
+  text-transform: uppercase;
+}
+/* line 14, ../sass/site-parts/_portfolio.scss */
+#portfolio h2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 15px;
+  left: -107px;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 24, ../sass/site-parts/_portfolio.scss */
+#portfolio h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 15px;
+  right: -107px;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 35, ../sass/site-parts/_portfolio.scss */
+#portfolio p {
+  margin: 0 auto 30px;
+  color: #424146;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 41, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item {
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+/* line 44, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item li {
+  float: left;
+  display: inline-block;
+}
+
+/* line 1, ../sass/site-parts/_clients.scss */
+#clients {
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+/* line 4, ../sass/site-parts/_clients.scss */
+#clients h2 {
+  position: relative;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_clients.scss */
+#clients h2 span {
+  padding: 5px 25px;
+  background-color: #424147;
+  color: #ffea00;
+  text-transform: uppercase;
+}
+/* line 14, ../sass/site-parts/_clients.scss */
+#clients h2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 15px;
+  left: -107px;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 24, ../sass/site-parts/_clients.scss */
+#clients h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  top: 15px;
+  right: -107px;
+  height: 1px;
+  background-color: #cacaca;
+}
+/* line 35, ../sass/site-parts/_clients.scss */
+#clients p {
+  margin: 0 auto 30px;
+  color: #424146;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 41, ../sass/site-parts/_clients.scss */
+#clients .clients-items {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+/* line 45, ../sass/site-parts/_clients.scss */
+#clients .clients-items li {
+  display: inline-block;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
@@ -401,7 +519,7 @@ footer .copyright-text span {
   box-sizing: border-box;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -416,7 +534,7 @@ footer .copyright-text span {
   clear: both;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 img {
   max-width: 100%;
 }
