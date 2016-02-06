@@ -464,52 +464,129 @@ header .main-navigation ul li a:hover {
 
 /* line 1, ../sass/layout/_footer.scss */
 footer {
-  position: relative;
   overflow: hidden;
-  text-align: center;
-  background-color: #222;
+  background-color: #414146;
+  padding: 15px 0;
 }
-/* line 6, ../sass/layout/_footer.scss */
-footer .social-list {
-  margin: 60px auto 25px;
-  text-align: center;
+/* line 5, ../sass/layout/_footer.scss */
+footer .flex-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 /* line 9, ../sass/layout/_footer.scss */
-footer .social-list li {
-  display: inline-block;
-  margin: 0 12px 12px 0;
+footer .flex-wrap h2, footer .flex-wrap h4 {
+  color: white;
+  font-size: 18px;
 }
-/* line 12, ../sass/layout/_footer.scss */
-footer .social-list li:last-child {
-  margin-right: 0;
+/* line 13, ../sass/layout/_footer.scss */
+footer .flex-wrap .left-col-contacts {
+  max-width: 410px;
 }
 /* line 15, ../sass/layout/_footer.scss */
-footer .social-list li .fa {
-  width: 48px;
-  height: 48px;
-  border: 2px solid white;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 24px;
-  color: #fff;
-  transition: 0.5s;
+footer .flex-wrap .left-col-contacts p {
+  margin: 25px 0;
+  color: white;
+  font-size: 13px;
+  line-height: 21px;
 }
-/* line 24, ../sass/layout/_footer.scss */
-footer .social-list li .fa:hover {
-  color: #222;
+/* line 21, ../sass/layout/_footer.scss */
+footer .flex-wrap .left-col-contacts a {
+  display: inline-block;
+  border-bottom: 2px solid #ffea00;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  transition: .5s;
+}
+/* line 29, ../sass/layout/_footer.scss */
+footer .flex-wrap .left-col-contacts a:hover {
+  color: black;
   background-color: #fff;
 }
-/* line 31, ../sass/layout/_footer.scss */
-footer .copyright-text {
-  margin-bottom: 60px;
-  font-size: 16px;
-  color: #bbb;
+/* line 34, ../sass/layout/_footer.scss */
+footer .flex-wrap .left-col-contacts h3 {
+  margin: 35px 0 20px;
+  color: white;
+  font-size: 18px;
 }
-/* line 35, ../sass/layout/_footer.scss */
-footer .copyright-text span {
-  color: #f7cc4b;
+/* line 40, ../sass/layout/_footer.scss */
+footer .flex-wrap .left-col-contacts .photo-stream li {
+  display: inline-block;
+  float: left;
+}
+/* line 46, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts {
+  max-width: 435px;
+  overflow: hidden;
+  text-align: left;
+}
+/* line 50, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list {
+  margin: 25px 0;
+}
+/* line 52, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li {
+  display: inline-block;
+  max-height: 55px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 21px;
+  color: white;
+}
+/* line 59, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li:last-child {
+  margin-bottom: 30px;
+}
+/* line 62, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li a {
+  color: white;
+  font-size: 13px;
+}
+/* line 65, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li a:hover {
+  text-decoration: underline;
+}
+/* line 69, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li .important-info {
+  color: #ffea00;
+}
+/* line 72, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li .fa {
+  display: inline-block;
+  float: left;
+  padding: 5px 15px 65px 0;
+  font-size: 28px;
+  color: #fff;
+}
+/* line 79, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .tweets-list li p {
+  color: #ffea00;
+  font-size: 8px;
+}
+/* line 85, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts h4 {
+  display: inline-block;
+  margin-right: 2px;
+}
+/* line 89, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .social-list {
+  display: inline-block;
+}
+/* line 91, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .social-list li {
+  display: inline-block;
+}
+/* line 93, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .social-list li .fa {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
 }
 
 /* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */

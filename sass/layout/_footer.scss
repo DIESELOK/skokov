@@ -1,39 +1,106 @@
 footer{
-  position: relative;
   overflow: hidden;
-  text-align: center;
-  background-color: #222;
-  .social-list{
-    margin: 60px auto 25px;
-    text-align: center;
-    li{
-      display:inline-block;
-      margin: 0 12px 12px 0;
-      &:last-child{
-        margin-right: 0;
+  background-color: #414146;
+  padding: 15px 0;
+  .flex-wrap{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    h2,h4{
+      color: white;
+      font-size: 18px;
+    }
+    .left-col-contacts{
+      max-width: 410px;
+      p{
+        margin:25px 0;
+        color: white;
+        font-size: 13px;
+        line-height: 21px;
       }
-      .fa{
-        width: 48px;
-        height: 48px;
-        border: 2px solid white;
-        @include border-radius(50%);
-        padding: 10px;
-        font-size: 24px;
-        color:#fff;
-        transition: 0.5s;
+      a{
+        display:inline-block;
+        border-bottom: 2px solid #ffea00;
+        padding:10px 20px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        transition: .5s;
         &:hover{
-          color:#222;
-          background-color: #fff;
+          color:black;
+          background-color:#fff;
+        }
+      }
+      h3{
+        margin:35px 0 20px;
+        color: white;
+        font-size: 18px;
+      }
+      .photo-stream{
+        li{
+          display:inline-block;
+          float: left;
         }
       }
     }
-  }
-  .copyright-text{
-    margin-bottom: 60px;
-    font-size: 16px;
-    color: #bbb;
-    span{
-      color: #f7cc4b;
+    .center-col-contacts{
+      max-width: 435px;
+      overflow: hidden;
+      text-align: left;
+      .tweets-list{
+        margin:25px 0;
+        li{
+          display:inline-block;
+          max-height: 55px;
+          margin-bottom: 10px;
+          font-size: 13px;
+          line-height: 21px;
+          color: white;
+          &:last-child{
+            margin-bottom: 30px;
+          }
+          a{
+            color: white;
+            font-size: 13px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          .important-info{
+            color: #ffea00;
+          }
+          .fa{
+            display:inline-block;
+            float:left;
+            padding: 5px 15px 65px 0;
+            font-size: 28px;
+            color:#fff;
+          }
+          p{
+            color: #ffea00;
+            font-size: 8px;
+          }
+        }
+      }
+      h4{
+        display:inline-block;
+        margin-right: 2px;
+      }
+      .social-list{
+        display:inline-block;
+        li{
+          display:inline-block;
+          .fa{
+            display:block;
+            width: 30px;
+            height: 30px;
+            padding: 8px;
+            font-size: 16px;
+            color:#fff;
+            background-color: black;
+          }
+        }
+      }
     }
   }
 }
