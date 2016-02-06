@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../fonts/century-gothic.ttf);
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px 'CenturyGothic', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 14px 'CenturyGothic', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 800px) {
+  /* line 1, ../sass/layout/_header.scss */
+  header {
+    min-height: 155px;
+  }
+}
+/* line 7, ../sass/layout/_header.scss */
+header h1 {
+  margin: 34px auto 10px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 7, ../sass/layout/_header.scss */
+  header h1 {
+    float: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 14, ../sass/layout/_header.scss */
+  header .main-navigation {
+    float: right;
+    margin-top: 80px;
+  }
+}
+/* line 20, ../sass/layout/_header.scss */
+header .main-navigation ul li {
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 20, ../sass/layout/_header.scss */
+  header .main-navigation ul li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  /* line 25, ../sass/layout/_header.scss */
+  header .main-navigation ul li:last-child {
+    margin-right: 0px;
+  }
+}
+/* line 29, ../sass/layout/_header.scss */
+header .main-navigation ul li a {
+  padding: 5px;
+  font-family: 'Source Code Pro';
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+/* line 37, ../sass/layout/_header.scss */
+header .main-navigation ul li a:hover {
+  background-color: #ffea00;
+}
+@media screen and (min-width: 800px) {
+  /* line 29, ../sass/layout/_header.scss */
+  header .main-navigation ul li a {
+    padding: 20px 10px;
+  }
+}
+
+/* line 1, ../sass/site-parts/_hero.scss */
+#hero {
+  overflow: hidden;
+  background: url("../images/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+/* line 5, ../sass/site-parts/_hero.scss */
+#hero .container {
+  position: relative;
+}
+/* line 8, ../sass/site-parts/_hero.scss */
+#hero .main-title {
+  max-width: 680px;
+  margin: 120px 0 10px;
+}
+@media screen and (min-width: 1338px) {
+  /* line 8, ../sass/site-parts/_hero.scss */
+  #hero .main-title {
+    max-width: 850px;
+    margin: 120px 0 10px;
+    letter-spacing: 6px;
+  }
+}
+/* line 16, ../sass/site-parts/_hero.scss */
+#hero .main-title span {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #ffea00;
+  color: black;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 85px;
+  text-transform: uppercase;
+}
+/* line 28, ../sass/site-parts/_hero.scss */
+#hero .hero-descript {
+  max-width: 380px;
+}
+/* line 30, ../sass/site-parts/_hero.scss */
+#hero .hero-descript span {
+  display: inline-block;
+  margin-bottom: 3px;
+  padding: 3px;
+  background-color: #414146;
+  color: white;
+  font-size: 24px;
+}
+/* line 39, ../sass/site-parts/_hero.scss */
+#hero .hero-btn {
+  display: inline-block;
+  margin: 60px 0 50px 370px;
+  border-bottom: 2px solid #ffea00;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  transition: .5s;
+}
+/* line 48, ../sass/site-parts/_hero.scss */
+#hero .hero-btn:hover {
+  color: black;
+  background-color: #fff;
+}
+@media screen and (max-width: 570px) {
+  /* line 39, ../sass/site-parts/_hero.scss */
+  #hero .hero-btn {
+    margin: 60px 0 50px;
+  }
+}
+@media screen and (min-width: 1338px) {
+  /* line 39, ../sass/site-parts/_hero.scss */
+  #hero .hero-btn {
+    margin-bottom: 200px;
+  }
+}
+/* line 59, ../sass/site-parts/_hero.scss */
+#hero .team-items {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+@media screen and (min-width: 1338px) {
+  /* line 59, ../sass/site-parts/_hero.scss */
+  #hero .team-items {
+    position: absolute;
+    top: 38px;
+    right: 15px;
+  }
+}
+/* line 73, ../sass/site-parts/_hero.scss */
+#hero .team-items li {
+  display: inline-block;
+  margin-bottom: -3px;
+}
+/* line 77, ../sass/site-parts/_hero.scss */
+#hero .team-items .empty-cell {
+  width: 180px;
+  height: 151px;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: #222;
+}
+/* line 6, ../sass/layout/_footer.scss */
+footer .social-list {
+  margin: 60px auto 25px;
+  text-align: center;
+}
+/* line 9, ../sass/layout/_footer.scss */
+footer .social-list li {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+/* line 12, ../sass/layout/_footer.scss */
+footer .social-list li:last-child {
+  margin-right: 0;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer .social-list li .fa {
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 24, ../sass/layout/_footer.scss */
+footer .social-list li .fa:hover {
+  color: #222;
+  background-color: #fff;
+}
+/* line 31, ../sass/layout/_footer.scss */
+footer .copyright-text {
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #bbb;
+}
+/* line 35, ../sass/layout/_footer.scss */
+footer .copyright-text span {
+  color: #f7cc4b;
+}
+
+/* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/style.scss */
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 20, ../sass/style.scss */
+img {
+  max-width: 100%;
+}
