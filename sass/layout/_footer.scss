@@ -98,9 +98,116 @@ footer{
             font-size: 16px;
             color:#fff;
             background-color: black;
+            &:hover{
+              background-color: #fff;
+              color:black;
+            }
+          }
+        }
+      }
+    }
+    .right-col-contacts{
+      .address{
+        margin: 25px 0;
+        li{
+          display:block;
+          overflow: hidden;
+          margin: 20px 0;
+          .fa {
+            width: 30px;
+            height: 30px;
+            float:left;
+            clear: both;
+            margin: 7px 10PX 0 0;
+            padding: 5px;
+            font-size: 20px;
+            color: #fff;
+            background-color: black;
+          }
+          .wrap-address {
+            float:left;
+          }
+          .wrap-email{
+            float:left;
+            margin-top:10px;
+            a{
+              color: #ffea00;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          p{
+            color: white;
+            font-size: 13px;
+            line-height: 21px;
+          }
+        }
+      }
+      form{
+        input[name="message"]{
+          width: 230px;
+          border:0px solid transparent;
+          border-bottom: 2px solid #ffea00;
+          background: transparent;
+          color:#fff;
+        }
+        button{
+          width:28px;
+          height: 21px;
+          background-color: black;
+          margin-left: -4px;
+          color:#fff;
+          border:none;
+          &:hover{
+            opacity: .7;
+          }
+        }
+      }
+
+      }
+    }
+  .prefooter{
+    display:flex;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 20px;
+    span{
+      float: left;
+      margin-top: 20px;
+      display: inline-block;
+      color:#fff;
+    }
+    .footer-nav{
+      @media screen and (min-width:800px){
+        float:right;
+        margin: 20px 0 20px 120px;
+      }
+      li{
+        text-align: center;
+        @media screen and (min-width:800px){
+          display:inline-block;
+          margin-right: 50px;
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+        a {
+          padding: 5px;
+          font-family: 'Source Code Pro';
+          font-size: 16px;
+          font-weight: 300;
+          color: #fff;
+          text-transform: uppercase;
+          transition: 0.5s;
+          &:hover {
+            text-decoration: underline;
+          }
+          @media screen and (min-width:800px){
+            padding: 20px 10px;
           }
         }
       }
     }
   }
-}
+  }

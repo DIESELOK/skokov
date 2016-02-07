@@ -588,6 +588,133 @@ footer .flex-wrap .center-col-contacts .social-list li .fa {
   color: #fff;
   background-color: black;
 }
+/* line 101, ../sass/layout/_footer.scss */
+footer .flex-wrap .center-col-contacts .social-list li .fa:hover {
+  background-color: #fff;
+  color: black;
+}
+/* line 110, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address {
+  margin: 25px 0;
+}
+/* line 112, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0;
+}
+/* line 116, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li .fa {
+  width: 30px;
+  height: 30px;
+  float: left;
+  clear: both;
+  margin: 7px 10PX 0 0;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+}
+/* line 127, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li .wrap-address {
+  float: left;
+}
+/* line 130, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li .wrap-email {
+  float: left;
+  margin-top: 10px;
+}
+/* line 133, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li .wrap-email a {
+  color: #ffea00;
+}
+/* line 135, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li .wrap-email a:hover {
+  text-decoration: underline;
+}
+/* line 140, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts .address li p {
+  color: white;
+  font-size: 13px;
+  line-height: 21px;
+}
+/* line 148, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts form input[name="message"] {
+  width: 230px;
+  border: 0px solid transparent;
+  border-bottom: 2px solid #ffea00;
+  background: transparent;
+  color: #fff;
+}
+/* line 155, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts form button {
+  width: 28px;
+  height: 21px;
+  background-color: black;
+  margin-left: -4px;
+  color: #fff;
+  border: none;
+}
+/* line 162, ../sass/layout/_footer.scss */
+footer .flex-wrap .right-col-contacts form button:hover {
+  opacity: .7;
+}
+/* line 170, ../sass/layout/_footer.scss */
+footer .prefooter {
+  display: flex;
+  overflow: hidden;
+  background-color: black;
+  margin-top: 20px;
+}
+/* line 175, ../sass/layout/_footer.scss */
+footer .prefooter span {
+  float: left;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+@media screen and (min-width: 800px) {
+  /* line 181, ../sass/layout/_footer.scss */
+  footer .prefooter .footer-nav {
+    float: right;
+    margin: 20px 0 20px 120px;
+  }
+}
+/* line 186, ../sass/layout/_footer.scss */
+footer .prefooter .footer-nav li {
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 186, ../sass/layout/_footer.scss */
+  footer .prefooter .footer-nav li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  /* line 191, ../sass/layout/_footer.scss */
+  footer .prefooter .footer-nav li:last-child {
+    margin-right: 0px;
+  }
+}
+/* line 195, ../sass/layout/_footer.scss */
+footer .prefooter .footer-nav li a {
+  padding: 5px;
+  font-family: 'Source Code Pro';
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+/* line 203, ../sass/layout/_footer.scss */
+footer .prefooter .footer-nav li a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 800px) {
+  /* line 195, ../sass/layout/_footer.scss */
+  footer .prefooter .footer-nav li a {
+    padding: 20px 10px;
+  }
+}
 
 /* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
